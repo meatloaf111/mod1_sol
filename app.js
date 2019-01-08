@@ -7,6 +7,9 @@ angular.module('LunchCheck',[])
 
 LunchCheckContoller.$inject = ['$scope'];
 function LunchCheckContoller($scope){
+    $scope.items ="";
+    $scope.message ="";
+    
     $scope.LunchChcker = function(){
         var lunchItems = 0;
         console.log($scope.items);
