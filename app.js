@@ -12,6 +12,7 @@ function LunchCheckContoller($scope){
         console.log($scope.items);
         if (!$scope.items){
             $scope.message = "Please enter lunch item";
+            console.log($scope.message);
 
         }else{
             $scope.message = "";
