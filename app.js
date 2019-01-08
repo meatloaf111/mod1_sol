@@ -9,13 +9,13 @@ LunchCheckContoller.$inject = ['$scope'];
 function LunchCheckContoller($scope){
     $scope.items ="";
     $scope.message ="";
-    
+
     $scope.LunchChcker = function(){
         var lunchItems = 0;
-        console.log($scope.items);
+        console.debug($scope.items);
         if (!$scope.items){
             $scope.message = "Please enter lunch item";
-            console.log($scope.message);
+            console.debug($scope.message);
 
         }else{
             $scope.message = "";
