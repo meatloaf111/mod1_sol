@@ -9,6 +9,7 @@ LunchCheckContoller.$inject = ['$scope'];
 function LunchCheckContoller($scope){
     $scope.LunchChcker = function(){
         var lunchItems = 0;
+        console.log($scope.items);
         if (!$scope.items){
             $scope.message = "Please enter lunch item";
 
